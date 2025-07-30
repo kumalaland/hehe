@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    font-family: "Bad Script";
+}
+.main1 {
+    background-color: rgba(0, 0, 0, 0.904);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+}
+.convertSQ {
+    position: absolute;
+    box-shadow: 0px 0px 30px 1px wheat;
+    width: 426px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 6;
+}
+.paper{
+    position: absolute;
+    width: 95%;
+    height: 80%;
+    z-index: 2;
+    margin-left: 2.5%;
+    margin-top: 10%;
+    background-color: rgb(254,248,230);
+    transition: 0.5s;
+    place-content: center;
+}
+/* Левый треугольник */
+#csq-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #ddd;
+    left: 0;
+    z-index: 3;
+}
+/* Правый треугольник */
+#csq-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-right: 150px solid #ddd;
+    right: 0;
+    z-index: 3;
+}
+/* Верхний треугольник (крышка конверта) */
+#csq-top {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 213px solid transparent;
+    border-right: 213px solid transparent;
+    border-top: 213px solid #eee;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+/* Нижний треугольник */
+#csq-bottom {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 213px solid transparent;
+    border-right: 213px solid transparent;
+    border-bottom: 213px solid #ccc;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+.op{
+    position: absolute;
+    width: 426px;
+    height: 213px;
+    margin-left: calc(50% - 213px);
+    margin-top: calc(50vh - 363px);
+}
+.op-d{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 213px solid transparent;
+    border-right: 213px solid transparent;
+    border-bottom: 213px solid #ccc;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+.paper p{
+    text-align: center;
+    font-size: 20pt;
+    font-family: "Bad Script", cursive;
+    user-select: none;
+    transition: 0.5s;
+}
+.paper2{
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    top: 0px;
+    place-items: center;
+}
+.paper2 p {
+    margin-top: 50px;
+    user-select: none;
+}
+.btn1 {
+    width: 25%;
+    height: 50px;
+    font-size: 20pt;
+    transition: 0.5s;
+    margin-top: 75px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Bad Script', cursive;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pravilaDiv1{
+    border: 1px solid transparent;
+    width: 80%;
+    height: 60vh;
+    margin-top: 20vh;
+}
+
+.ttext1 {
+    border: 1px solid transparent;
+    position: relative;
+    width: 250px;
+    margin-left: calc(50% - 125px);
+    margin-top: calc(30vh - 25px);
+}
+
+.text1 {
+    border: 1px solid transparent;
+    font-size: 20pt;
+}
+
+.muzicmenu{
+    position: relative;
+    width: 400px;
+    height: 40px;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    place-items: center;
+    margin-left: calc(50% - 200px);
+    margin-top: calc(10vh - 20px);
+}
+
+.MUZMbtn1{
+    position: relative;
+    width: 40%;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 5px aquamarine;
+}
+
+.MUZMbtn2{
+    position: relative;
+    width: 40%;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 5px rgb(255, 143, 143);
+}
+
+.MUZMbtn1, .MUZMbtn2 {
+    border-radius: 7px;
+    border: none;
+    font-family: "Bad Script";
+    /* display: flex;
+    justify-content: center;
+    place-items: center; */
+}
+
+
+
+.gobtn{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    box-shadow: 0px 0px 10px 5px wheat;
+    border-radius: 15px;
+    margin-top: calc(30vh - 20px);
+    font-family: "Bad Script";
+    font-size: 15pt;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* .ph1{
+    width: 100px;
+    height: 100px;
+    border: 10px solid red;
+}
+
+.paper2 {
+    border: 1px solid red;
+} */
+.counter {
+    width: 70px;
+    height: 70px;
+    border: 1px solid transparent;
+}
+
+.ttext2{
+    border: 1px solid transparent;
+}
+
+.vd{
+    width: 95vw;
+    height: 90vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+}
+
+.vad01{
+    /* border: 1px solid rgb(13, 0, 255); */
+    width: 40vw;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px ;
+    p{
+        font-size: 15pt;
+    }
+}
+
+.vq1{
+}
+
+.vad2{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+    p{
+        /* border: 1px solid red; */
+    }
+}
+
+.vad3{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+    p{
+        /* border: 1px solid red; */
+    }
+}
+.finaltext1{
+    position: absolute;
+    opacity: 0;
+    font-size: 20pt;
+    margin-top: calc(50vh - 30px);
+}
